@@ -1,0 +1,48 @@
+<!DOCTYPE html class=desktop>
+<html lang="es">
+</html>
+<head>
+  <section class="logo">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script type="text/javascript" src="script.js"></script>
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="style.css">
+  <h1><img src="Vector.png" alt=""></h1>
+  </section>
+</head>
+<body class="body">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  <section class="textoEncriptado">
+    <h2> Ingrese el texto aquí</h2>
+ </section>
+
+ <section class="encriptador">
+  <img class= muneco src="Muñeco.png">
+  <h2 class="title">Ningún mensaje fue encontrado</h2>
+  <input type="text" id="textoEncriptado" class="texto-encriptador" required placeholder="Ingresa el texto que desees encriptar o desencriptar.">
+ </section>
+
+ <textarea name="resultado" class= "resultado" id= "textoDesencriptado" cols="30" rows="10"></textarea>
+</body>
+
+<footer>
+<button type="button" id="botonEncriptado" class="botonEncriptar">Encriptar</button>
+<button type="button" id="botonDesencriptado" class="botonDesencriptar">Desencriptar</button>
+<button type="button" id="botonCopiar" class="botonCopiar">Copiar</button>
+ <script>
+    var btn= document.querySelector ("#botonEncriptado");
+    btn.onclick = encriptar;
+    var btn2= document.querySelector ("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector ("#botonCopiar");
+    btn3.onclick = copiar;
+</script> 
+</footer>
+
+
+</html>
